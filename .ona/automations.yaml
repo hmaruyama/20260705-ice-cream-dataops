@@ -1,0 +1,16 @@
+tasks:
+  install-dependencies:
+    name: Install dependencies
+    command: poetry install --no-root
+    triggeredBy:
+      - manual
+      - postDevcontainerStart
+      - prebuild
+
+  build-toolkit-configurations:
+    name: Build Toolkit configurations
+    command: poetry run cdf build --env=test
+    dependsOn:
+      - install-dependencies
+    triggeredBy:
+      - manual
