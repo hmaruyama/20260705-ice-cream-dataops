@@ -1,7 +1,7 @@
 [project]
 name = "20260705-ice-cream-dataops"
 version = "0.1.0"
-description = ""
+description = "desctiption"
 authors = [
     {name = "HikaruMaruyama",email = "7115497+hmaruyama@users.noreply.github.com"}
 ]
